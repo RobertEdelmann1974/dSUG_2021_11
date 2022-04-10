@@ -1,7 +1,7 @@
 # Demovortrag November 2021
 
 ## Voraussetzungen
-- Servoy 2021-09
+- Servoy 2021-12
 - supermailer von http://servoy-plugins.de
 - SmartDocEditor
 

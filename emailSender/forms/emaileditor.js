@@ -53,7 +53,7 @@ function sendEmail(wandeln) {
 		if (errorOccured) {
 			throw errorOccured;
 		} else {
-			throw {message: 'Verbindung fehlgeschlagen', className: ''};
+			throw {message: 'Connection failed', className: ''};
 		}
 	}
 	
@@ -66,10 +66,10 @@ function sendEmail(wandeln) {
 	if (wandeln) {
 		mailMessage.subject = scopes.email.subject + ' - mit Wandlung';
 		mailMessage = scopes.email.convertBase64ToCid(mailMessage);
-		scopes.email.messageBereinigt = mailMessage.htmlMsg;
+		scopes.email.messageCleaned = mailMessage.htmlMsg;
 	}
 	var success = smtpAccount.sendMessage(mailMessage);
 	if (success) {
-		plugins.dialogs.showInfoDialog('Emails','Email wurde erfolgreich verschickt!')
+		plugins.dialogs.showInfoDialog('Emails','Email successfully sent')
 	}
 }

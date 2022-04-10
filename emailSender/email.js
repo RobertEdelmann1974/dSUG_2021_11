@@ -8,7 +8,7 @@ var messagebody = null;
  * @type {String}
  * @properties={typeid:35,uuid:"15ECC3F1-FF8A-4125-A6C1-DBAFB970DC13"}
  */
-var messageBereinigt = null;
+var messageCleaned = null;
 
 /**
  * @type {String}
@@ -77,14 +77,14 @@ var imapPassword = '';
  *
  * @properties={typeid:35,uuid:"A5CFFB4F-962A-40E7-BCB5-F8475863B290"}
  */
-var emailTo = 'Robert.Edelmann@BauProCheck.de';
+var emailTo = 'email.address@goes.here';
 	
 /**
  * @type {String}
  *
  * @properties={typeid:35,uuid:"F8EF9F6A-C3C8-4213-8DDD-71B1E7BFC8BB"}
  */
-var mailFrom = 'ProjektPersonAP@von-metzsch.de';
+var mailFrom = 'email.from@goes.here';
 
 /**
  * @return {{toolbar: Array<*>}}
@@ -153,23 +153,23 @@ function getSmartDocEditorConfig() {
         },
 		fontColor: {
 			colors: [
-				{color: '#000000', label: 'Schwarz'},
-				{color: '#4d4d4d', label: 'Dunkelgrau'},
-				{color: '#999999', label: 'Grau'},
-				{color: '#e6e6e6', label: 'Hellgrau'},
-				{color: '#ffffff', label: 'Weiß'},
+				{color: '#000000', label: 'black'},
+				{color: '#4d4d4d', label: 'dark grey'},
+				{color: '#999999', label: 'grey'},
+				{color: '#e6e6e6', label: 'light grey'},
+				{color: '#ffffff', label: 'white'},
 
-				{color: '#F52828', label: 'Rot'},
-				{color: '#F58714', label: 'Orange'},
-				{color: '#F5F528', label: 'Gelb'},
-				{color: '#78F528', label: 'Hellgrün'},
-				{color: '#1fb751', label: 'Mittelgrün'},
+				{color: '#F52828', label: 'red'},
+				{color: '#F58714', label: 'orange'},
+				{color: '#F5F528', label: 'yellow'},
+				{color: '#78F528', label: 'light green'},
+				{color: '#1fb751', label: 'medium green'},
 
-				{color: '#28F5B4', label: 'Aquamarin'},
-				{color: '#28F5F5', label: 'Türkis '},
-				{color: '#2882f5', label: 'Mittelblau '},
-				{color: '#2828F5', label: 'Blau'},
-				{color: '#F528F5', label: 'Violet'}
+				{color: '#28F5B4', label: 'sort-of-blue'},
+				{color: '#28F5F5', label: 'torquise'},
+				{color: '#2882f5', label: 'medium blue'},
+				{color: '#2828F5', label: 'blue'},
+				{color: '#F528F5', label: 'violet'}
 			]
 		}
 	}
@@ -222,5 +222,6 @@ function convertBase64ToCid(mailMessage) {
 		image.attr('src',newName);
 	}
 	mailMessage.htmlMsg = htmlDoc.toString();
+	scopes.email.messageCleaned = mailMessage.htmlMsg;
 	return mailMessage;
 }

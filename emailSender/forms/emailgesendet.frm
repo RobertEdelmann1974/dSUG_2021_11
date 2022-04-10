@@ -19,7 +19,7 @@ right:"0",
 top:"0",
 width:"140"
 },
-dataProviderID:"scopes.email.messageBereinigt"
+dataProviderID:"scopes.email.messageCleaned"
 },
 name:"textarea_2",
 typeName:"bootstrapcomponents-textarea",

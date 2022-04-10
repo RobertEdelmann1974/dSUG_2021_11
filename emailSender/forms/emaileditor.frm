@@ -15,7 +15,7 @@ width:"130"
 },
 formIndex:0,
 onActionMethodID:"73FDC3C7-EE9A-495A-A931-8DF9BFD20149",
-text:"Senden++"
+text:"Convert + Send"
 },
 name:"btnSendMod",
 typeName:"bootstrapcomponents-button",
@@ -41,7 +41,7 @@ width:"130"
 },
 formIndex:0,
 onActionMethodID:"DA06A983-C54D-4DAC-8743-3C27E03013E2",
-text:"Senden"
+text:"Send"
 },
 name:"btnSendOrg",
 typeName:"bootstrapcomponents-button",
@@ -187,7 +187,7 @@ top:"50",
 width:"80"
 },
 formIndex:0,
-text:"Betreff"
+text:"Subject:"
 },
 name:"label_3",
 typeName:"bootstrapcomponents-label",
@@ -206,7 +206,7 @@ top:"10",
 width:"80"
 },
 formIndex:0,
-text:"Empfänger",
+text:"To:",
 visible:true
 },
 name:"label_2",
