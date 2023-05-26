@@ -16,6 +16,13 @@ uuid:"27E8D25C-6DB7-46DC-B06B-A7033187C55C"
 {
 encapsulation:0,
 mimeType:"text/css",
+name:"kunden_style.css",
+typeid:37,
+uuid:"55EDF0A4-E26F-448E-AC99-365F3D9C2A11"
+},
+{
+encapsulation:0,
+mimeType:"text/css",
 name:"smartdoceditor.css",
 typeid:37,
 uuid:"9090FFC7-0B97-4626-96F4-A619F0B4E0BC"

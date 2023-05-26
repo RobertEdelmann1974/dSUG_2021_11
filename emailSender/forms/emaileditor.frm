@@ -255,6 +255,7 @@ uuid:"DF16619C-F364-4A8A-B397-7DE4440A1183"
 name:"emaileditor",
 navigatorID:"-1",
 onLoadMethodID:"FBC10834-0169-4ADB-9A2D-5DCE902EDB19",
+onShowMethodID:"A4F60ADA-2A9B-4F98-8B30-2BD3A0027227",
 showInMenu:true,
 size:"1150,671",
 typeid:3,

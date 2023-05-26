@@ -73,3 +73,15 @@ function sendEmail(wandeln) {
 		plugins.dialogs.showInfoDialog('Emails','Email successfully sent')
 	}
 }
+/**
+ * Callback method for when form is shown.
+ *
+ * @param {Boolean} firstShow form is shown first time after load
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @properties={typeid:24,uuid:"A4F60ADA-2A9B-4F98-8B30-2BD3A0027227"}
+ */
+function onShow(firstShow, event) {
+//	var kundencss = plugins.file.
+	elements.smartdocumenteditor.editorStyleSheet = "media:///kunden_style.css"
+}
